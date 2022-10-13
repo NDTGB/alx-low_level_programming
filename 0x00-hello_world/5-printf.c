@@ -1,6 +1,10 @@
 #include <stdio.h>
-/* main - begins program */
-/* returns value 0 (successful) */
+
+
+/**
+ *main - Entry Point
+ *Returns: Always 0 (success)
+ */
 
 int main(void)
 
