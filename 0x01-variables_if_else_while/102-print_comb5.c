@@ -18,24 +18,24 @@ int main(void)
 		{
 			for (ones = '0'; ones <= '9'; ones++)
 			{
-				for (t = tens; t <= '9'; t++) /*print second of pair*/
-				{
-					for (o = ones + 1; o <= '9'; o++)
-					{
-						putchar(tens);
-						putchar(ones);
-						putchar(' ');
-						putchar(t);
-						putchar(o);
+			for (t = tens; t <= '9'; t++) /*print second of pair*/
+			{
+			for (o = ones + 1; o <= '9'; o++)
+			{
+				putchar(tens);
+				putchar(ones);
+				putchar(' ');
+				putchar(t);
+				putchar(o);
 
-						if (!((tens == '9' && ones =='8')))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+				if (!((tens == '9' && ones =='8')))
+					{
+						putchar(',');
+						putchar(' ');
 					}
-					o = '0';
-				}
+			}
+			o = '0';
+			}
 			}
 		}
 		putchar('\n');
