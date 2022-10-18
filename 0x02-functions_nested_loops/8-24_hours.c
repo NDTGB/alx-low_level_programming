@@ -6,8 +6,8 @@
 
 void jack_bauer(void)
 {
-	int HH;
-	int mm;
+	int HH = 0;
+	int mm = 0;
 
 	{
 		for (HH = 0; HH <= 23; HH++)
