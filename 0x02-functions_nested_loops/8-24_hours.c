@@ -10,10 +10,10 @@ void jack_bauer(void)
 	int m = 0;
 
 	{
-		for (H < 24)
+		for (H < "24")
 
 		{
-			for (m < 60)
+			for (m < "60")
 				_putchar('0' + (H / 10));
 				_putchar('0' + (H % 10));
 				_putchar(':');
