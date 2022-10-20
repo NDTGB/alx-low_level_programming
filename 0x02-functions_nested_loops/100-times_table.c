@@ -17,7 +17,7 @@ void print_times_table(int n)
 			_putchar('0');
 			for (Mul = 1; Mul <= n; Mul++)
 			{
-				Pro = Num * Mul
+				Pro = (Num * Mul);
 				if (Mul == 0)
 					_putchar('0' + Pro);
 				else
