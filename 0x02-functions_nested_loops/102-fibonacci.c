@@ -20,7 +20,7 @@ int main(void)
 	}
 	if (counter % 2 == 1)
 	{
-		printf("%li", x);
+		printf("%li,", x);
 	}
 	printf("\n");
 
