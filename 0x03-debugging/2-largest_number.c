@@ -9,14 +9,26 @@
  */
 
 int largest_number(int a, int b, int c)
-{
-	int largest;
 
-	largest = a;
-	if (b > largest)
-		largest = b;
-	if (c > largest)
-		largest = c;
+    int largest;
+    int a, b, c;
+    int largest_number = a;
+    a = 972;
+    b = -98;
+    c = 0;
 
-	return (largest);
+    if (a > b)
+    {
+        largest = a;
+    }
+    if (b > a)
+    {
+        largest = b;
+    }
+    if (c > a)
+    {
+        largest = c;
+    }
+	printf("%d is the largest number\n", largest);
+    return (largest);
 }
