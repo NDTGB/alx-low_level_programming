@@ -33,9 +33,9 @@ void print_times_table(int n)
 
 				if (Pro >= 100)
 				{
-					_putchar('0' + (Pro / 100));
-					_putchar('0' + ((Pro / 100) % 10));
-					_putchar('0' + (Pro % 100));
+					_putchar((Pro / 100) + '0');
+					_putchar(((Pro / 100) % 10) + '0');
+					_putchar((Pro % 100) + '0');
 				}
 
 				else if (Pro <= 99 && Pro >= 10)
