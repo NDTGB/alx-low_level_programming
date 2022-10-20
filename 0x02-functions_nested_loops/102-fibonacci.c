@@ -8,21 +8,21 @@
 int main(void)
 {
 	int count;
-	int counter = 50;
-	long x = 1;
-	long y = 2;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (count = 1; count <= (counter / 2); count++)
+	for (count = 0; count < 50; count++)
 	{
-		printf("%li, %li,", x, y);
-		x += y;
-		y += x;
+		sum = fib1 + fib2;
+		printf("%lu", sum);
+
+		fib1 = fib2;
+		fib2 = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
-	if (counter % 2 == 1)
-	{
-		printf("%li", x);
-	}
-	printf("\n");
 
 	return (0);
 }
