@@ -18,15 +18,17 @@ void print_times_table(int n)
 
 			for (Mul = 1; Mul <= n; Mul++)
 			{
-				_putchar(',');
-				_putchar(' ');
+			_putchar(',');
+			_putchar(' ');
 
 				Pro = Num * Mul;
 
 				if (Pro <= 99)
+				{
 					_putchar(' ');
 				if (Pro <= 9)
 					_putchar(' ');
+				}
 
 				if (Pro >= 100)
 				{
