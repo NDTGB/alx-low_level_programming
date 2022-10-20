@@ -21,18 +21,19 @@ void print_times_table(int n)
 					_putchar('0' + Pro);
 				else
 				{
-				_putchar(',');
-				_putchar(' ');
-				if (Pro <= 9)
-				{	_putchar(' ');
+					_putchar(',');
+					_putchar(' ');
+					if (Pro <= 9)
+				{
+					_putchar(' ');
 					_putchar(' ');
 					_putchar('0' + Pro);
 				}
 				else if (Pro > 9 && Pro < 100)
 				{
 					_putchar(' ');
-					_putchar('0' + (Pro / 100));
-					_putchar('0' + (Pro % 100));
+					_putchar('0' + (Pro / 10));
+					_putchar('0' + (Pro % 10));
 				}
 
 				else if (Pro >= 100)
