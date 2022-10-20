@@ -24,7 +24,7 @@ void print_times_table(int n)
 				Pro = Num * Mul;
 
 
-				if (Pro <= 9)
+				if (Pro <= 9 && Pro <= 99)
 				{	_putchar(' ');
 					_putchar(' ');
 					_putchar(Pro + '0');
