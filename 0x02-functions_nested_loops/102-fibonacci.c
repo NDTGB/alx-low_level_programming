@@ -13,15 +13,19 @@ int main(void)
 	for (count = 0; count < 50; count++)
 	{
 		sum = x + y;
+
 		printf("%lu", sum);
 
 		x = y;
 		y = sum;
 
 		if (count == 49)
+
 			printf("\n");
+
 		else
-			printf(", ");
+
+			printf(",");
 	}
 
 	return (0);
