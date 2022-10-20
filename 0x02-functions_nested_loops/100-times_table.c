@@ -24,14 +24,14 @@ void print_times_table(int n)
 				{
 				_putchar(',');
 				_putchar(' ');
-				if (Pro <= 9 && Pro <= 99)
+				if (Pro <= 9)
 				{	_putchar(' ');
 					_putchar(' ');
-					_putchar(Pro + '0');
+					_putchar('0' + Pro);
 				}
-
 				else if (Pro > 9 && Pro < 100)
 				{
+					_putchar(' ');
 					_putchar((Pro / 100) + '0');
 					_putchar((Pro % 100) + '0');
 				}
@@ -43,8 +43,8 @@ void print_times_table(int n)
 					_putchar((Pro % 100) + '0');
 				}
 				}
-				_putchar('\n');
 			}
+			_putchar('\n');
 
 		}
 	}
