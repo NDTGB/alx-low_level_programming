@@ -1,22 +1,24 @@
-include "main.h"
+/*
+ * File: 5-more_numbers.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
 
 /**
- * more_numbers - print the numbers 0 through 14 ten times
- *
- * Return: void
+ * more_numbers - Prints the numbers 0-14 ten times.
  */
 void more_numbers(void)
 {
-	int i;
-	int j;
+	int num, count;
 
-	for (j = 0; j < 10; ++j)
+	for (count = 0; count <= 9; count++)
 	{
-		for (i = 0; i < 15; ++i)
+		for (num = 0; num <= 14; num++)
 		{
-			if (i > 9)
-				_putchar('0' + i / 10);
-			_putchar('0' + i % 10);
+			if (num > 9)
+				_putchar((num / 10) + '0');
+			_putchar((num % 10) + '0');
 		}
 		_putchar('\n');
 	}
