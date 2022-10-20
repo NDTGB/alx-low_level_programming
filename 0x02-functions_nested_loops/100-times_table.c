@@ -30,22 +30,22 @@ void print_times_table(int n)
 					_putchar(Pro + '0');
 				}
 
+				else if (Pro > 9 && Pro < 100)
+				{
+					_putchar((Pro / 100) + '0');
+					_putchar((Pro % 100) + '0');
+				}
+
 				if (Pro >= 100)
 				{
 					_putchar((Pro / 100) + '0');
 					_putchar(((Pro / 100) % 10) + '0');
 					_putchar((Pro % 100) + '0');
 				}
-
-				else if (Pro > 9 && Pro < 100)
-				{
-					_putchar((Pro / 100) + '0');
-					_putchar((Pro % 100) + '0');
 				}
-				}
-
+				_putchar('\n');
 			}
+
 		}
-		_putchar('\n');
 	}
 }
