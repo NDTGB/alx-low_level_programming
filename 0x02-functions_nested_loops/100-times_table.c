@@ -15,23 +15,22 @@ void print_times_table(int n)
 		for (Num = 0; Num <= n; Num++)
 		{
 			_putchar('0');
-
 			for (Mul = 1; Mul <= n; Mul++)
 			{
+				Pro = Num * Mul
+				if (Mul == 0)
+					_putchar('0' + Pro);
+				else
+				{
 				_putchar(',');
 				_putchar(' ');
-
-				Pro = Num * Mul;
-
-
 				if (Pro <= 9 && Pro <= 99)
 				{	_putchar(' ');
 					_putchar(' ');
 					_putchar(Pro + '0');
 				}
 
-
-				else if (Pro >= 100)
+				if (Pro >= 100)
 				{
 					_putchar((Pro / 100) + '0');
 					_putchar(((Pro / 100) % 10) + '0');
@@ -42,6 +41,7 @@ void print_times_table(int n)
 				{
 					_putchar((Pro / 100) + '0');
 					_putchar((Pro % 100) + '0');
+				}
 				}
 
 			}
