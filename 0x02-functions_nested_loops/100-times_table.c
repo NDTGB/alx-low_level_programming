@@ -42,8 +42,6 @@ void print_times_table(int n)
 					_putchar((Pro / 100) + '0');
 				}
 
-				_putchar((Pro / 100) + '0');
-
 			}
 			_putchar('\n');
 		}
