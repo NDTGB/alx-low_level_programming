@@ -24,11 +24,9 @@ void print_times_table(int n)
 				Pro = Num * Mul;
 
 				if (Pro <= 99)
-				{
 					_putchar(' ');
 				if (Pro <= 9)
 					_putchar(' ');
-				}
 
 				if (Pro >= 100)
 				{
