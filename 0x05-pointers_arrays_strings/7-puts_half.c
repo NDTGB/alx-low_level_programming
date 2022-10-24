@@ -1,26 +1,21 @@
 #include "main.h"
 
-
 /**
- * puts_half - prints half of a string, followed by a new line
- * @str: string to print
+ * puts_half - print the second half of a string
+ * @str: the string to print
+ *
+ * Return: void
  */
-
 void puts_half(char *str)
 {
-	int idx;
-	int len = _strlen(str);
+	int len;
 
-	/* find the index to start depending on even/odd amount of strlen */
-	if (len % 2 != 0)
-		idx = (len / 2) + 1;
-	else
-		idx = (len / 2);
-
-	while (idx < len)
+	if (str)
 	{
-		_putchar(*(str + idx));
-		idx++;
+		for (len = 0; *(str + len); ++len)
+			;
+		for (str += (len + 1) / 2; *str; ++str)
+			putchar(*str);
+		putchar('\n');
 	}
-	_putchar('\n');
 }
