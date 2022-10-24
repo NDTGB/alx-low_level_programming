@@ -3,26 +3,33 @@
 #include <time.h>
 
 /**
-* main - Entry point
-* Return: return 0
-*/
+ * main - program that generates random vaid
+ * passwords for the program 101-crackme
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
- {
-	 int contador;
-	 int  checksum;
-	 int  aleatorio;
+{
+	int pass[100];
+	int i, sum, n;
+
+	sum = 0;
 
 	srand(time(NULL));
-	checksum = 2772;
-	contador = 0;
 
-	while (checksum > 122)
+	for (i = 0; i < 100; i++)
 	{
-		aleatorio = (rand() % 100);
-		printf("%c", aleatorio);
-		checksum -= aleatorio;
-		contador++;
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
 	}
-	printf("%c", checksum);
-        return 0;
- }
+
+	return (0);
+}
