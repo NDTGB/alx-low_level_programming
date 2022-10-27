@@ -7,7 +7,7 @@
  * prototype of the function _putchar used in
  * directory 0x06-pointers_arrays_strings
  */
-int _putchar(char c);`
+int _putchar(char c);
 void print_buffer(char *b, int size);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
