@@ -1,4 +1,5 @@
 #!/bin/bash
-gcc -c *.c
-ar -rc liball.a *.o
-ranlib liball.a
+files=( *.c )
+gcc -c -Wall -Werror -Wextra -pedantic "${files[@]}"
+ar -rc liball.a "${files[@]/%.c/.o}"
+rm "${files[@]/%.c/.o}"
