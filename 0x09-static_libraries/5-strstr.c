@@ -21,9 +21,9 @@ char *_strstr(char *haystack, char *needle)
 			if (!*npos)
 				return (haystack);
 			if (!*hpos)
-				return (NULL);
+				return (0);
 		} while (*hpos++ == *npos++);
 	} while (*(++haystack));
 
-	return (NULL);
+	return (0);
 }
