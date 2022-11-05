@@ -1,6 +1,7 @@
 #define MAIN_H
-#define main_c
+
 #include <stdio.h>
+
 
 
 void reset_to_98(int *n);
